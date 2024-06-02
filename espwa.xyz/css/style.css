@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+::selection {
+  background: #028a0f;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #028a0f;
+  color: #fff;
+}
+
+::-webkit-selection {
+  background: #028a0f;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #028a0f;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #234f1e;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #eee;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar-superior {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  height: 50px;
+  width: auto;
+  margin: 0 15px;
+  padding: 0;
+}
+
+.seccion-icono-espwa {
+  height: 50px;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+}
+
+.incono-espwa {
+  height: 50px;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.seccion-nota {
+  margin: 0 15px;
+  padding: 150px 0 15px 0;
+  text-align: left;
+}
+
+.texto-espwa {
+  color: #555;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.seccion-tiempo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+  padding: 15px 0;
+}
+
+.secciones-digitos{
+  height: 112.5px;
+  width: 100px;
+  background: #fff;
+  border-radius: 15px;
+  margin: 0 15px;
+  padding: 0;
+  box-shadow: #999 0px 2px 8px;
+}
+
+.nombre-digitos{
+  color: #fff;
+  background: #028a0f;
+  border-radius: 15px 15px 0 0 ;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  padding: 5px;
+}
+
+.digitos-horas,
+.digitos-minutos,
+.digitos-segundos{
+  color: #028a0f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0;
+  padding: 5px;
+}
+
+.seccion-footer {
+  margin: 0 15px;
+  padding: 150px 0 0 0 ;
+  bottom: 0;
+  height: auto;
+  width: auto;
+}
+
+.seccion-redes-sociales {
+  height: 30px;
+  width: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.iconos-redes-sociales {
+  color: #555;
+  height: 30px;
+  width: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.iconos-redes-sociales:hover {
+  color: #028a0f;
+}
+
+.texto-footer {
+  color: #777;
+  font-size: 12.5px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+/* RWD */
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 480px) {
+  .nav-bar-superior {
+    height: 40px;
+    width: auto;
+  }
+  
+  .seccion-icono-espwa {
+    height: 35px;
+    width: 75px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .incono-espwa {
+    height: 35px;
+    width: 75px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .seccion-nota {
+    padding: 150px 0 15px 0;
+    text-align: left;
+  }
+  
+  .texto-espwa {
+    font-size: 21px;
+    font-weight: 700;
+  }
+  
+  .seccion-tiempo{
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+    padding: 15px 0 50px 0;
+  }
+  
+  .secciones-digitos{
+    height: 70px;
+    width: 75px;
+    background: #fff;
+    border-radius: 7.5px;
+    margin: 0 7.5px;
+    padding: 0;
+    box-shadow: #999 0px 2px 8px;
+  }
+  
+  .nombre-digitos{
+    border-radius: 7.5px 7.5px 0 0 ;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0;
+    padding: 5px;
+  }
+  
+  .digitos-horas,
+  .digitos-minutos,
+  .digitos-segundos{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    padding: 5px;
+  }
+  
+  .seccion-footer {
+    margin: 0 15px;
+    padding: 150px 0 7.5px 0 ;
+    bottom: 0;
+    height: auto;
+    width: auto;
+  }
+  
+  .seccion-redes-sociales {
+    height: 21px;
+    width: 21px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .iconos-redes-sociales {
+    color: #555;
+    height: 21px;
+    width: 21px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .iconos-redes-sociales:hover {
+    color: #028a0f;
+  }
+  
+  .texto-footer {
+    color: #777;
+    font-size: 10px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+  }
+}
