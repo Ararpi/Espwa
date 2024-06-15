@@ -1,2 +1,0 @@
-# Espwa
-Iniciativa Solidaria Personal
