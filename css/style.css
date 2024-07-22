@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --main-color: #028a0f;
+  --hover-color: #234f1e;
+  --background-main-color: #eee;
+  --gris-claro: #777;
+  --gris-oscuro: #555;
+  --blanco: #fff;
+  --negro: #000;
+  --crema: #ccc;
+  --font-family: "Inter", sans-serif;
+  --font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+::selection {
+  background: var(--main-color);
+  color: #fff;
+}
+
+::-moz-selection {
+  background: var(--main-color);
+  color: #fff;
+}
+
+::-webkit-selection {
+  background: var(--main-color);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 0.9375rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--hover-color);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--background-main-color);
+  overflow-x: hidden;
+  line-height: 1.5;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0 0.9375rem;
+}
+
+/*••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• Sección Barra de Navegación Superior •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+.nav-bar-superior {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 0.9375rem 0;
+}
+
+.seccion-icono-espwa {
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.incono-espwa {
+  height: 3.125rem;
+  width: 6.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+/*••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• Responsiveness •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+/* SM */
+@media (max-width: 480px) {
+
+  .incono-espwa {
+    height: 1.5625rem;
+    width: 4.6875rem;
+  }
+}
+
+/* M */
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .incono-espwa {
+    height: 1.5625rem;
+    width: 4.6875rem;
+  }
+}
+
+/* L */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .incono-espwa {
+    height: 1.875rem;
+    width: 5.625rem;
+  }
+}
+
+/* XL */
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+  .incono-espwa {
+    height: 2.5rem;
+    width: 5.625rem;
+  }
+}
+
+/* 2XL */
+@media (min-width: 1201px){
+ 
+  .incono-espwa {
+    height: 3.125rem;
+    width: 6.25rem;
+  }
+}
+
+/*••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• Sección Nota & Tiempo •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+
+.seccion-nota-y-tiempo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 75vh;
+  width: 100%;
+}
+
+.bloque-nota {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.texto-espwa {
+  color: #555;
+  font-size: 2.8125rem;
+  font-weight: 700;
+  margin: 0 0 2.5rem 0;
+  padding: 0;
+}
+
+.bloque-tiempo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.bloques-digitos{
+  border: 0.09375rem solid var(--crema);
+  height: auto;
+  width: 6.25rem;
+  background: #fff;
+  border-radius: 0.9375rem;
+  margin: 0 0.9375rem;
+  padding: 0;
+}
+
+.nombre-digitos{
+  color: #fff;
+  background: #028a0f;
+  border-radius: 0.9375rem 0.9375rem 0 0 ;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0.46875rem;
+  height: auto;
+  width: 100%;
+}
+
+.digitos-horas,
+.digitos-minutos,
+.digitos-segundos{
+  color: #028a0f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.8125rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0.46875rem;
+  height: auto;
+  width: 100%;
+}
+
+/*••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• Responsiveness •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+/* SM */
+@media (max-width: 480px) {
+  
+  .texto-espwa {
+    font-size: 1.3125rem;
+  }
+  
+  .nombre-digitos{
+    font-size: 0.9375rem;
+  }
+
+  .bloques-digitos{
+    margin: 0.46875rem;
+  }
+  
+  .digitos-horas,
+  .digitos-minutos,
+  .digitos-segundos{
+    font-size: 1.5625rem;
+  }
+}
+
+/* M */
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .texto-espwa {
+    font-size: 1.5625rem;
+  }
+  
+  .nombre-digitos{
+    font-size: 0.9375rem;
+  }
+  
+  .digitos-horas,
+  .digitos-minutos,
+  .digitos-segundos{
+    font-size: 1.71875rem;
+  }
+}
+
+/* L */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .texto-espwa {
+    font-size: 1.71875rem;
+  }
+  
+  .nombre-digitos{
+    font-size: 0.9375rem;
+  }
+  
+  .digitos-horas,
+  .digitos-minutos,
+  .digitos-segundos{
+    font-size: 1.875rem;
+  }
+}
+
+/* XL */
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+  .texto-espwa {
+    font-size: 1.875rem;
+  }
+  
+  .nombre-digitos{
+    font-size: 0.9375rem;
+  }
+  
+  .digitos-horas,
+  .digitos-minutos,
+  .digitos-segundos{
+    font-size: 2.1875rem;
+  }
+}
+
+/* 2XL */
+@media (min-width: 1201px){
+
+  .texto-espwa {
+    font-size: 2.8125rem;
+  }
+  
+  .nombre-digitos{
+    font-size: 18px;
+  }
+  
+  .digitos-horas,
+  .digitos-minutos,
+  .digitos-segundos{
+    font-size: 2.8125rem;
+  }
+}
+
+/*••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• Sección Footer •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+
+.seccion-footer {
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-content: center;
+  left: 0;
+  margin: 0;
+  padding: 0 0 0.46875rem;
+  position: absolute; 
+  height: auto;
+  width: 100%;
+}
+
+.seccion-redes-sociales {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 0 0 0.9375rem 0;
+}
+
+.iconos-redes-sociales {
+  color: var(--main-color);
+  height: 1.875rem;
+  width: 1.875rem;
+  margin: 0;
+  padding: 0;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+}
+
+.iconos-redes-sociales:hover {
+  color: var(--hover-color);
+}
+
+.texto-footer {
+  color: #777;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/*••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• Responsiveness •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+/* SM */
+@media (max-width: 480px) {
+  
+  .iconos-redes-sociales {
+    height: 1.3125rem;
+    width: 1.3125rem;
+  }
+}
+
+/* M */
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .iconos-redes-sociales {
+    height: 1.3125rem;
+    width: 1.3125rem;
+  }
+}
+
+/* L */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .iconos-redes-sociales {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+/* XL */
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+  .iconos-redes-sociales {
+    height: 1.71875rem  ;
+    width: 1.71875rem;
+  }
+}
+
+/* 2XL */
+@media (min-width: 1201px){
+
+  .iconos-redes-sociales {
+    height: 1.875rem;
+    width: 1.875rem;
+  }
+}
+
+/*••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• Responsiveness •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+/* SM */
+@media (max-width: 480px) {}
+
+/* M */
+@media (min-width: 481px) and (max-width: 768px) {}
+
+/* L */
+@media (min-width: 769px) and (max-width: 1024px) {}
+
+/* XL */
+@media (min-width: 1025px) and (max-width: 1200px) {}
+
+/* 2XL */
+@media (min-width: 1201px){}
